@@ -21,7 +21,7 @@ import lombok.Setter;
 @Table(name = "Consulta")
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
-
+// atualização
 public class Consulta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
