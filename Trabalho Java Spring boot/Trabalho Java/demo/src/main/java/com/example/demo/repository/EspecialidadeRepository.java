@@ -13,7 +13,5 @@ public interface EspecialidadeRepository extends JpaRepository<Especialidade, Lo
     
     // Busca contendo parte do nome (case insensitive)
     List<Especialidade> findByNomeContainingIgnoreCase(String nome);
-    
-    // Verifica se existem médicos vinculados
-    boolean existsByMedicosNotEmpty();
+
 }
