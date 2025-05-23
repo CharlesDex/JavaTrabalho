@@ -10,9 +10,12 @@ import com.example.demo.Entities.Medico;
 import com.example.demo.Entities.Pacientes;
 
 public interface ConsultaRepository extends JpaRepository<Consulta, Long> {
-    List<Consulta> findByMedicoAndDataHoraBetween(Medico medico, LocalDateTime inicio, LocalDateTime fim);
+    /*List<Consulta> findByMedicoAndDataHoraBetween(Medico medico, LocalDateTime inicio, LocalDateTime fim);
     List<Consulta> findByPaciente(Pacientes paciente);
     List<Consulta> findByStatus(String status);
     List<Consulta> findByDataHoraBetween(LocalDateTime inicio, LocalDateTime fim);
     boolean existsByMedicoAndDataHora(Medico medico, LocalDateTime dataHora);
+    List<Consulta> findAllUsing(Long medicoId, Long pacienteId, String status, LocalDateTime dataInicio,
+            LocalDateTime dataFim);
+    List<Consulta> findByMedicoIdAndDataHoraBetween(Long id, LocalDateTime inicio, LocalDateTime fim);*/
 }

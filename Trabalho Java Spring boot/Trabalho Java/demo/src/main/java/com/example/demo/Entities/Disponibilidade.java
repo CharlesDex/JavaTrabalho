@@ -31,13 +31,23 @@ public class Disponibilidade {
     @JoinColumn(name = "medico_id", nullable = false)
     private Medico medico;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String diaSemana;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private LocalTime horarioinicio;
 
     @Column(nullable = false)
     private LocalTime horarioFim;
+
+    public String getDiaDaSemana() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getDiaDaSemana'");
+    }
+
+    public LocalTime getHorarioInicio() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getHorarioInicio'");
+    }
 
 }

@@ -47,4 +47,9 @@ public class Consulta {
     @Column(nullable = false)
     private String obseravacoes;
 
+    public void setObservacoes(String observacoes) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setObservacoes'");
+    }
+
 }
