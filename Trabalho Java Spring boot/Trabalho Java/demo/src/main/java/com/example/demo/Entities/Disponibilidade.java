@@ -23,21 +23,21 @@ import lombok.Setter;
 @NoArgsConstructor @AllArgsConstructor
 
 public class Disponibilidade {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+   @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
+   private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "medico_id", nullable = false)
-    private Medico medico;
+   // Removendo o campo medicoId e substituindo pela relação
+   @ManyToOne
+   @JoinColumn(name = "medico_id", nullable = false)
+   private Medico medico;
 
-    @Column(nullable = false, unique = true)
-    private String diaSemana;
+   @Column(nullable = false)
+   private Integer diaDaSemana;
 
-    @Column(nullable = false, unique = true)
-    private LocalTime horarioinicio;
+   @Column(nullable = false)
+   private LocalTime horarioInicio;
 
-    @Column(nullable = false)
-    private LocalTime horarioFim;
-
+   @Column(nullable = false)
+   private LocalTime horarioFim;
 }
